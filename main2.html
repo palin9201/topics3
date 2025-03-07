@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新頁面</title>
+    <style>
+        #container {margin: 0 auto;width: 1024px;}
+        td {text-align: left;}
+        .r_img{border-radius: 50%;width: 300px;height: 300px;}
+        .r_img1{border-radius:20px;}
+        .large_font{font-size: 46px;}
+        .large_font1{font-size: 42px;}
+        .large_font2{font-size: 30px;}
+        .large_font3{font-size: 25px;}
+        .large_font4{font-size: 24px;}
+        .r_img:hover{rotate: 10deg;opacity: 50%}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* 左右對齊 */
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .nav-links a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">人工智慧應用於心律不整螺旋波相位奇異點之偵測</div>
+    <div class="nav-links">
+    <a href="index.html">首頁</a>
+    <a href="main1.html">研究目的</a>
+    <a href="main2.html">研究方法/收集資料</a>
+    </div>
+    </div>
+<div id="container">
+    <table>
+       
+        <tr>
+            <td colspan="2">
+            <h1 class="large_font2">資料來源</h1>
+            <hr style="border: 1px solid black; width: 100%;"> 
+            <div style="text-align: center;"><img src="02.jpg" class="r_img1"> </div>
+            <p class="large_font3">●<span style="color: blue;">Optical Mapping（光學映射）</span>
+            是一種利用光學技術記錄和分析生物組織（尤其是心臟組織）電活動或其他動態現象的技術。</p>
+            <p class="large_font3">●應用於心臟研究:在心律失常研究中，光學映射能記錄心肌細胞的動作
+            電位傳導和再極化過程，幫助識別和定位心律不整的發生點及傳導異常。</p>
+            <p class="large_font3">● <span style="color: blue;">技術特點</span>:</p>
+            <p class="large_font3">染料標記：使用電壓敏感染料標記心肌細胞膜的電位變化。</p>
+            <p class="large_font3">光學記錄：利用高速相機捕捉心臟表面的電活動變化。</p>
+            <h1 class="large_font2">收集資料</h1>
+            <hr style="border: 1px solid black; width: 100%;"> 
+            <div style="text-align: center;"><img src="02.jpg" class="r_img1"> </div>
+            <p style="text-align: center;" class="large_font3">●將影片丟入並擷取圖片,擷取 7960 張心臟影像</p>
+            <p style="text-align: center;" class="large_font3">Optical Mapping - Phase Map 呈現平台</p>
+            <h1 class="large_font2">PS標註 </h1>
+            <hr style="border: 1px solid black; width: 100%;">
+            <div style="text-align: center;"><<img src="03.jpg" class="r_img1"></div>
+            <p class="large_font4">●使用<span style="color: blue;">LabelImg</span>對每張影像進行相位奇異點的標註(VOC格式)，標註後命名ps標記圖檔共<span style="color: blue;"> 6089 </span>張</p>
+            <p class="large_font3"><span style="color: blue;">YOLOv7 模型</span>以高效能和精準物件偵測聞名，適合用於 <span style="color: blue;">ps</span> 的自動化標註與分析，能滿足快速診斷的臨床需求。</p>
+
+
+
+
+
+            </p>
+            
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

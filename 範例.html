@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全屏滾動圖片 + 文字</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .text {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 2rem;
+        }
+
+        .section1 {
+            background-image: url('https://source.unsplash.com/1600x900/?interior');
+        }
+
+        .section2 {
+            background-image: url('https://source.unsplash.com/1600x900/?architecture');
+        }
+
+        .section3 {
+            background-image: url('https://source.unsplash.com/1600x900/?design');
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section section1">
+        <div class="text">現代簡約風設計</div>
+    </div>
+    
+    <div class="section section2">
+        <div class="text">工業風設計案例</div>
+    </div>
+    
+    <div class="section section3">
+        <div class="text">北歐風溫馨居家</div>
+    </div>
+
+</body>
+</html>
